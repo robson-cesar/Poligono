@@ -27,4 +27,11 @@ public class Ponto {
         this.x = x; //Associando o atributo ao parâmetro utilizando this
         this.y = y;
     }
+    public Double getDistancia(Ponto p){
+        return Math.sqrt(Math.pow(p.x-this.x,2)+ Math.pow(p.y-this.y,2)); //Math.sqrt(A) é raiz quandrada de A; Assim como Math.pow(A,B) é a potencia de A elevado à B.
+    }
+    public Ponto(){ //Polimorfismo, foi utilizado o mesmo método de construção na classe para objetivos diferentes.
+        this.x=0.0;
+        this.y=0.0;
+    }
 }
